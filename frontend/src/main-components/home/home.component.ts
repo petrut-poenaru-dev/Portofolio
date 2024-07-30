@@ -9,5 +9,8 @@ import {CommonModule} from "@angular/common";
   imports:[CommonModule]
 })
 export class HomeComponent{
-
+  public pTag = "<p>";
+  public pTagEnd = "</p>"
+  public h1Tag = "<h1>";
+  public h1TagEnd = "</h1>"
 }

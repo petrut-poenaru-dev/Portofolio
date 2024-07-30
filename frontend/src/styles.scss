@@ -88,3 +88,19 @@ body{
 .icon-linkedin2:before {
   content: "\eaca";
 }
+
+.hideOnMobile{
+  @media(max-width: 1260px){
+    display: none;
+  }
+}
+
+.tag{
+  font-family: "IBM Plex Mono";
+  font-size: 14px;
+  color:var(--color-aqua);
+}
+
+.highlight{
+  color:var(--color-aqua);
+}
