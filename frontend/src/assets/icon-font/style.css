@@ -1,28 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-:root{
-  --color-bg-1:#292F36;
-  --color-bg-2:#1A1E23;
-  --color-aqua:#12F7D6;
-  --color-aqua-light:#98FAEC;
-  --color-grey:#43454D;
-  --color-white:#ffffff;
-  --color-html:#E54F26;
-  --color-scss:#CC669B;
-  --color-js:#E7A020;
-  --color-ts:#0C73B8;
-  --color-angular:#BD002E;
-}
-//font-family: IBM Plex Mono;
-//font-family: Ubuntu;
 @font-face {
   font-family: 'icomoon';
-  src:  url('assets/icon-font/icomoon.eot?pih1nw');
-  src:  url('assets/icon-font/icomoon.eot?pih1nw#iefix') format('embedded-opentype'),
-  url('assets/icon-font/icomoon.ttf?pih1nw') format('truetype'),
-  url('assets/icon-font/icomoon.woff?pih1nw') format('woff'),
-  url('assets/icon-font/icomoon.svg?pih1nw#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?pih1nw');
+  src:  url('fonts/icomoon.eot?pih1nw#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?pih1nw') format('truetype'),
+    url('fonts/icomoon.woff?pih1nw') format('woff'),
+    url('fonts/icomoon.svg?pih1nw#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
