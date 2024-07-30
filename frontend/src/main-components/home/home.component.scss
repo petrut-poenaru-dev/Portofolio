@@ -1,0 +1,118 @@
+:host {
+  width: 100%;
+  max-width: 1920px;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--color-bg-1);
+  padding: 64px 256px;
+
+  .title {
+    font-family: Ubuntu;
+    font-size: 80px;
+    color: var(--color-aqua);
+  }
+
+  .home-container-content {
+    display: flex;
+    align-items: center;
+    gap: 128px;
+
+    .contact-card {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      align-items: center;
+      padding: 38px 24px;
+      border: 4px solid rgba(255, 255, 255, 1);
+      border-radius: 160px 0px 160px 0px;
+      box-shadow: -4px -4px 2px 0px rgba(18, 247, 214, 1);
+
+      .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: "IBM Plex Mono";
+        color: var(--color-white);
+
+        .name {
+          font-size: 32px;
+          margin-top: 16px;
+        }
+
+        .role {
+          font-size: 14px;
+        }
+      }
+
+      .contact-description {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+
+        .contact-description-item {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          font-family: "IBM Plex Mono";
+
+          .icon {
+            span {
+              font-size: 14px;
+              color: var(--color-aqua);
+            }
+          }
+
+          .content {
+            color: var(--color-white);
+            font-size: 14px;
+          }
+        }
+      }
+
+      .skills {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        flex-wrap: wrap;
+        width: 250px;
+        font-family: "IBM Plex Mono";
+
+        .skill {
+          border-radius: 8px;
+          padding: 0px 8px;
+          background: var(--color-aqua);
+          font-size: 14px;
+
+          &:hover {
+            background: var(--color-white);
+            cursor: pointer;
+          }
+        }
+
+      }
+
+      .download {
+        align-self: flex-start;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 16px 32px;
+        background: var(--color-white);
+        color: var(--color-bg-1);
+        font-family: Ubuntu;
+        font-size: 20px;
+        border-radius: 32px;
+
+        &:hover {
+          cursor: pointer;
+          background: var(--color-aqua);
+          color: var(--color-white);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+:host{
+  width: 100%;
+  max-width: 1920px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 128px;
+  font-family: IBM Plex Mono;
+  background: var(--color-bg-1);
+  border-bottom: 2px solid var(--color-grey);
+
+  .logo {
+    font-size: 32px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    &-sign {
+      color: var(--color-aqua);
+    }
+
+    &-name {
+      color: var(--color-white);
+    }
+  }
+  .header-social-media{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    .social-media-item{
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      .icon{
+        span{
+          font-size: 20px;
+          color:var(--color-aqua);
+        }
+      }
+      .content{
+        font-size: 16px;
+        color:var(--color-white);
+      }
+      &:hover{
+        .content{
+          color:var(--color-aqua);
+        }
+      }
+    }
+  }
+}

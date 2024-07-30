@@ -14,6 +14,15 @@
   --color-ts:#0C73B8;
   --color-angular:#BD002E;
 }
+
+body{
+  margin: 0;
+  padding: 0;
+  background: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 //font-family: IBM Plex Mono;
 //font-family: Ubuntu;
 @font-face {
@@ -48,38 +57,30 @@
 }
 .icon-icon-link:before {
   content: "\e901";
-  color: #12f7d6;
 }
 .icon-icon-mail:before {
   content: "\e902";
-  color: #fff;
 }
 .icon-icon-map-pin:before {
   content: "\e903";
-  color: #12f7d6;
 }
 .icon-icon-monitor:before {
   content: "\e904";
-  color: #fff;
 }
 .icon-icon-user:before {
   content: "\e905";
-  color: #fff;
 }
 .icon-icon-briefcase:before {
   content: "\e906";
-  color: #12f7d6;
 }
 .icon-icon-code:before {
   content: "\e907";
-  color: #fff;
 }
 .icon-icon-download:before {
   content: "\e908";
 }
 .icon-icon-edit:before {
   content: "\e909";
-  color: #fff;
 }
 .icon-github:before {
   content: "\eab0";
