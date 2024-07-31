@@ -9,5 +9,6 @@ import {CommonModule} from "@angular/common";
   imports:[CommonModule]
 })
 export class AboutComponent{
-
+  public pTag = "<p>";
+  public pTagEnd = "</p>"
 }
