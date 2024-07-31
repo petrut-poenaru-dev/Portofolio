@@ -1,0 +1,113 @@
+:host {
+  width: 100%;
+  max-width: 1920px;
+}
+
+.skills-container {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+  ),
+  url("../../assets/skills-background.png");
+  background-size: cover;
+  background-position: center;
+  background-color: var(--color-bg-2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 128px;
+  padding: 128px;
+  @media (max-width: 1260px) {
+    padding: 64px 32px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    align-items: center;
+
+    .title-and-description {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+
+      .title {
+        font-family: Ubuntu;
+        font-size: 64px;
+        color: var(--color-aqua);
+      }
+
+      .description {
+        font-family: "IBM Plex Mono";
+        font-size: 16px;
+        color: var(--color-white);
+        text-align: center;
+      }
+    }
+
+    .role-container {
+      display: flex;
+      align-items: center;
+
+      .line {
+        width: 8px;
+        height: 96px;
+        border-radius: 8px 0px 0px 8px;
+        background-color: #0C73B8;
+      }
+
+      .role-content {
+        padding: 16px 24px;
+        border-radius: 0px 8px 8px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        background-color: var(--color-aqua-light);
+        font-family: "IBM Plex Mono";
+        font-size: 24px;
+      }
+    }
+
+    .skills {
+      display: flex;
+      align-items: center;
+      gap: 128px;
+      @media (max-width: 1260px) {
+        gap: 64px;
+        flex-wrap: wrap;
+      }
+
+      .skill {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        align-items: center;
+
+        .icon {
+          padding: 48px 52px;
+          border-radius: 80px;
+          @media(max-width: 1260px) {
+            padding: 32px 34px;
+          }
+
+          span {
+            font-size: 64px;
+            color: var(--color-white);
+            @media (max-width: 1260px) {
+              font-size: 48px;
+            }
+          }
+        }
+
+        .skill-name {
+          font-family: "IBM Plex Mono";
+          font-weight: 500;
+          font-size: 32px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+<div class="skills-container">
+  <div class="top-scroll hideOnMobile">
+    <img src="assets/skills-scroll.png" alt="">
+  </div>
+  <div class="content">
+    <div class="title-and-description">
+      <span class="title">Skills</span>
+      <span class="description">I am striving to never stop learning and improving</span>
+    </div>
+    <div class="role-container">
+      <div class="line"></div>
+      <div class="role-content">
+        <span class="icon-icon-monitor"></span>
+        <span class="role-content-title">Web Development</span>
+      </div>
+    </div>
+    <div class="skills">
+      <div class="skill" *ngFor="let skill of skills">
+        <div class="icon" [ngStyle]="{background: skill.color}">
+          <span class="{{skill.icon}}"></span>
+        </div>
+        <span class="skill-name" [ngStyle]="{color: skill.color}">{{skill.name}}</span>
+      </div>
+    </div>
+  </div>
+</div>
