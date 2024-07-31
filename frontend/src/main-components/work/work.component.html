@@ -1,0 +1,29 @@
+<div class="work-container">
+  <div class="top-scroll hideOnMobile">
+    <img src="assets/skills-scroll.png" alt="">
+  </div>
+  <div class="work-content">
+    <div class="text">
+      <span class="title">Works</span>
+      <div class="description">I had the pleasure of working with these awesome projects</div>
+    </div>
+    <div class="projects">
+      <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+        <div ngxSlickItem class="slide">
+          <div class="view-site" (click)="goToJurist()">
+            <span class="icon-icon-link"></span>
+            <span>View Website</span>
+          </div>
+          <img src="assets/jurist-hub.png" alt="" width="100%"/>
+        </div>
+        <div ngxSlickItem class="slide">
+          <div class="view-site" (click)="goToFloAuto()">
+            <span class="icon-icon-link"></span>
+            <span>View Website</span>
+          </div>
+          <img src="assets/flo-auto-lease.png" alt="" width="100%"/>
+        </div>
+      </ngx-slick-carousel>
+    </div>
+  </div>
+</div>

@@ -121,3 +121,56 @@ body{
 .highlight{
   color:var(--color-aqua);
 }
+.slick-track{
+  width: 600px;
+  @media (max-width: 768px) {
+    width: 100px;
+  }
+}
+body .slick-prev,
+body .slick-next {
+  height: 45px;
+  width: 40px;
+  z-index: 100;
+  &:hover{
+    &:before{
+      color:var(--color-white);
+    };
+  }
+  @media (max-width: 768px) {
+    height: 35px;
+    width: 30px;
+  }
+}
+
+body .slick-next{
+  right: -15px;
+}
+
+body .slick-prev:before {
+  font-size: 32px;
+  color: var(--color-aqua);
+  opacity: 1;
+
+}
+
+body .slick-prev {
+  @media (max-width: 500px) {
+    left: 8px;
+  }
+}
+
+body .slick-next {
+  @media (max-width: 500px) {
+    right: 15px !important;
+  }
+}
+
+body .slick-next:before {
+  font-size: 32px;
+  color: var(--color-aqua);
+  opacity: 1;
+  &:hover{
+    color:var(--color-white) !important;
+  }
+}

@@ -34,6 +34,7 @@
     .text {
       display: flex;
       flex-direction: column;
+      align-items: center;
       gap: 72px;
 
       .title {
@@ -45,6 +46,9 @@
         font-size: 48px;
         color: var(--color-white);
         width: fit-content;
+        @media (max-width: 1260px) {
+          font-size: 32px;
+        }
       }
 
       .description {
