@@ -1,5 +1,6 @@
 <div class="app-container">
-  <div class="menu">
+  <div *ngIf="isActiveNotification$ | async" class="notification" [class.succes]="(notificationType$ | async) === 'succes'" [class.error]="(notificationType$ | async) === 'error'">{{messageNotification$ | async}}</div>
+  <div class="menu hideOnMobile">
     <span class="icon" (click)="scrollToSection('home')" [class.active]="activeSection === 'home'">
       <span class="icon-icon-grid"></span>
     </span>
