@@ -49,11 +49,20 @@
       }
     }
   }
-  @media (min-width: 1921px) {
-    left:12% !important;
+  @media ((min-width: 1921px) and (max-width:2100px)) {
+    left:6% !important;
   }
+
   @media (max-width: 1920px) {
     left:2% !important;
+  }
+
+  @media (min-width: 2100px) {
+    left:10% !important;
+  }
+
+  @media ((min-width: 2300px) and (max-width:2600px)) {
+    left:17% !important;
   }
 
 }
