@@ -10,4 +10,11 @@ import {CommonModule} from "@angular/common";
 })
 export class FooterComponent{
 
+  public goToLinkedin(): void {
+    window.open("https://www.linkedin.com/in/petrut-poenaru-dev", "_blank");
+  }
+
+  public goToGitHub(): void {
+    window.open("https://github.com/petrut-poenaru-dev", "_blank");
+  }
 }

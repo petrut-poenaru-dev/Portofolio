@@ -1,0 +1,43 @@
+<div class="contact-container">
+  <div class="top-scroll hideOnMobile">
+    <img src="assets/skills-scroll.png" alt="">
+  </div>
+  <div class="contact-content">
+    <div class="title-and-description">
+      <span class="title">Contact</span>
+      <div class="description">I’m currently available for fulltime / freelance work</div>
+    </div>
+    <div class="send-message-section">
+      <div class="title">Send Me A Message</div>
+      <form [formGroup]="contactFormGroup">
+        <div class="name-and-email">
+          <div class="name">
+            <label for="name">Your name*</label>
+            <input type="text" id="name" placeholder="Enter your name" formControlName="name" name="name" required>
+            <div *ngIf="contactFormGroup.value.name === ''" class="error">
+              Name is required.
+            </div>
+          </div>
+          <div class="email">
+            <label for="email">Your email*</label>
+            <input type="email" id="email" placeholder="Enter your email" formControlName="email" name="email" required>
+            <div  class="error">
+              <div *ngIf="contactFormGroup?.get('email')?.errors">Invalid email</div>
+            </div>
+          </div>
+        </div>
+        <div class="your-message">
+          <label for="message">Your message*</label>
+          <textarea id="message" placeholder="Enter your needs" formControlName="message" name="message" required></textarea>
+          <div *ngIf="contactFormGroup.value.message === ''" class="error">
+            Message is required.
+          </div>
+        </div>
+      </form>
+      <div (click)="sendEmail()" [class.disabled]="contactFormGroup.invalid"  class="send-message-button">
+        <span>Send Message</span>
+        <span class="icon-icon-send"></span>
+      </div>
+    </div>
+  </div>
+</div>

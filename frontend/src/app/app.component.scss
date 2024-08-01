@@ -5,4 +5,32 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+}
+.menu{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  padding: 8px 12px;
+  gap: 24px;
+  left:2%;
+  top:15%;
+  background-color: var(--color-bg-2);
+  border: 1px solid #FFFFFF;
+  border-radius: 40px;
+  .icon{
+    padding: 8px;
+    border-radius: 40px;
+    span{
+      color:var(--color-white);
+      cursor: pointer;
+    }
+    &.active{
+      background-color: var(--color-white);
+      color:var(--color-bg-2);
+      span{
+        color:var(--color-bg-2);
+      }
+    }
+  }
 }

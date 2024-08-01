@@ -1,1 +1,141 @@
+:host {
+  width: 100%;
+  max-width: 1920px;
+}
+.contact-container {
+  background-color: var(--color-bg-2);
+  padding: 64px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 64px;
+  @media (max-width: 1260px) {
+    padding: 64px 32px;
+  }
+  .contact-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    .title-and-description {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
 
+      .title {
+        font-family: Ubuntu;
+        font-size: 64px;
+        color: var(--color-aqua);
+      }
+
+      .description {
+        font-family: "IBM Plex Mono";
+        font-size: 16px;
+        color: var(--color-white);
+        text-align: center;
+      }
+    }
+    .send-message-section{
+      display: flex;
+      flex-direction: column;
+      gap: 64px;
+      align-items: center;
+      .title{
+        padding: 16px 40px;
+        border: 2px solid var(--color-aqua);
+        border-radius:32px 0px 32px 0px;
+        font-family: "IBM Plex Mono";
+        font-size: 32px;
+        font-weight: 500;
+        color:var(--color-aqua);
+        @media (max-width: 1260px) {
+          font-size: 24px;
+          text-align: center;
+        }
+      }
+      form{
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+        @media (max-width: 1260px) {
+          width: 100%;
+          gap: 24px;
+        }
+        .name-and-email{
+          display: flex;
+          align-items: flex-start;
+          gap: 128px;
+          @media (max-width: 1260px) {
+            gap: 24px;
+            width: 100%;
+            flex-direction: column;
+          }
+        }
+        .name , .email{
+          width: 500px;
+          @media (max-width: 1260px) {
+            width: 100%;
+          }
+        }
+        .name , .email , .your-message{
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+          label{
+            font-family: Ubuntu;
+            color:var(--color-aqua);
+            font-size: 16px;
+          }
+          input , textarea{
+            font-family: Ubuntu;
+            color:var(--color-white);
+            font-size: 16px;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid var(--color-aqua);
+            padding-bottom: 8px;
+            &::placeholder{
+              font-family: Ubuntu;
+              color:var(--color-white);
+              font-size: 16px;
+            }
+            &:focus{
+              border-bottom: 2px solid var(--color-aqua);
+            }
+          }
+          textarea{
+            resize: vertical;
+          }
+        }
+      }
+      .send-message-button{
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding: 16px 32px;
+        border-radius: 32px;
+        background-color: var(--color-aqua);
+        font-family: Ubuntu;
+        font-size: 20px;
+        color:var(--color-bg-1);
+        &:hover{
+          background-color: var(--color-bg-2);
+          color:var(--color-aqua);
+          cursor: pointer;
+          border:1px solid var(--color-aqua);
+        }
+        &.disabled{
+          cursor: not-allowed !important;
+          background-color: grey;
+          &:hover{
+            color:var(--color-bg-1);
+            border: none;
+          }
+        }
+      }
+    }
+  }
+
+}

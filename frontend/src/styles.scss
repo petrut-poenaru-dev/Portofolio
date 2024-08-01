@@ -23,15 +23,14 @@ body{
   align-items: center;
   justify-content: center;
 }
-//font-family: IBM Plex Mono;
-//font-family: Ubuntu;
+
 @font-face {
   font-family: 'icomoon';
-  src:  url('assets/icon-font/icomoon.eot?ujq59p');
-  src:  url('assets/icon-font/icomoon.eot?ujq59p#iefix') format('embedded-opentype'),
-  url('assets/icon-font/icomoon.ttf?ujq59p') format('truetype'),
-  url('assets/icon-font/icomoon.woff?ujq59p') format('woff'),
-  url('assets/icon-font/icomoon.svg?ujq59p#icomoon') format('svg');
+  src:  url('assets/icon-font/icomoon.eot?7mx409');
+  src:  url('assets/icon-font/icomoon.eot?7mx409#iefix') format('embedded-opentype'),
+  url('assets/icon-font/icomoon.ttf?7mx409') format('truetype'),
+  url('assets/icon-font/icomoon.woff?7mx409') format('woff'),
+  url('assets/icon-font/icomoon.svg?7mx409#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -57,6 +56,9 @@ body{
 }
 .icon-js:before {
   content: "\e90a";
+}
+.icon-icon-send:before {
+  content: "\e90e";
 }
 .icon-angular:before {
   content: "\e90b";
@@ -121,6 +123,11 @@ body{
 .highlight{
   color:var(--color-aqua);
 }
+
+.error{
+  color:var(--color-angular);
+}
+
 .slick-track{
   width: 600px;
   @media (max-width: 768px) {

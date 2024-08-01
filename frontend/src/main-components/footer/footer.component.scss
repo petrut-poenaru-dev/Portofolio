@@ -1,0 +1,52 @@
+:host {
+  width: 100%;
+  max-width: 1920px;
+}
+
+.footer-container {
+  padding: 24px 128px;
+  background-color: var(--color-bg-2);
+  border-top: 1px solid var(--color-grey);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media (max-width: 1260px) {
+    padding: 24px;
+    flex-direction: column-reverse;
+    gap: 16px;
+    justify-content: initial;
+    align-items: center;
+  }
+  .copyright {
+    font-family: Ubuntu;
+    color: var(--color-white);
+    font-size: 16px;
+  }
+
+  .footer-social-media {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+    .social-media-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+
+      .icon {
+        span {
+          font-size: 20px;
+          color: var(--color-aqua);
+        }
+
+        &:hover {
+          span {
+            color: var(--color-white);
+          }
+        }
+      }
+    }
+  }
+
+}
